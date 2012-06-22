@@ -1,0 +1,17 @@
+{
+	"scope": "source.php - variable.other.php",
+
+	"completions":
+	[
+		{"trigger": "dv", "contents": "echo Debug::vars(${2:\\$var});${1:die;}"},
+		{"trigger": "dvd", "contents": "var_dump(${2:\\$var});${1:die;}"},
+		{"trigger": "kd", "contents": "echo Kohana::debug(${1:\\$var});${2:die;}"},
+		{"trigger": "kdef", "contents": "defined('SYSPATH') or die('No direct script access.');"},
+		{"trigger": "klog", "contents": "Kohana::\\$log->add(Log::${1:level}, '${2:message}'${3:, array()});"},
+		{"trigger": "orm", "contents": "ORM::factory('${1:model}')"},
+		{"trigger": "requestf", "contents": "Request::factory('${1:uri}')"},
+		{"trigger": "requesti", "contents": "Request::instance('${1:uri}')"},
+		{"trigger": "validation", "contents": "Validation::factory(\\$${1:values})"},
+		{"trigger": "kex", "contents": "throw new Kohana_Exception('${1:message}'${2:, array()});"}
+	]
+}
